@@ -1,4 +1,5 @@
 // src/App.tsx
+import { Analytics } from '@vercel/analytics/react';
 import { useState } from 'react';
 import './App.css';
 import { LinkedInIcon } from './components/LinkedInIcon';
@@ -12,6 +13,7 @@ export default function App() {
 
 	return (
 		<div className="app">
+			<Analytics />
 			<header className="header">
 				<h1>⛽ Postos de Combustível — São Mateus/ES</h1>
 				<p className="subtitle">
