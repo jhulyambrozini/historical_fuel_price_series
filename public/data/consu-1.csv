@@ -1,0 +1,51 @@
+"Nome do Posto",Endereço,Bairro,Cidade,Estado,"Tipo de Combustível","Tipo de Preço","Valor do Combustível (R$)","Data da Coleta"
+"Posto Sd LTDA","Av. Governador Eurico Vieira de Rezende, 278","Guriri Norte","São Mateus",ES,"Gasolina Aditivada","Maior Preço",6.890,2026-04-09
+"Posto Sd LTDA","Av. Governador Eurico Vieira de Rezende, 278","Guriri Norte","São Mateus",ES,"Gasolina Comum","Maior Preço",6.790,2026-04-09
+"Posto Sd LTDA","Av. Governador Eurico Vieira de Rezende, 278","Guriri Norte","São Mateus",ES,"Gasolina Comum","Menor Preço",6.690,2026-01-06
+"Posto Sd LTDA","Av. Governador Eurico Vieira de Rezende, 278","Guriri Norte","São Mateus",ES,"Gasolina Aditivada","Menor Preço",6.790,2026-01-06
+"Posto Sd LTDA","Av. Governador Eurico Vieira de Rezende, 278","Guriri Norte","São Mateus",ES,"Diesel S-10","Menor Preço",5.990,2026-01-06
+"Posto Sd LTDA","Av. Governador Eurico Vieira de Rezende, 278","Guriri Norte","São Mateus",ES,"Diesel S-10","Maior Preço",7.090,2026-04-09
+"Posto de Combustiveis Ferrari Sao Mateus LTDA","Rodovia BR-101 Norte, 921","Vila Nova","São Mateus",ES,"Gasolina Comum","Menor Preço",6.390,2026-01-02
+"Posto de Combustiveis Ferrari Sao Mateus LTDA","Rodovia BR-101 Norte, 921","Vila Nova","São Mateus",ES,Etanol,"Menor Preço",4.490,2026-01-07
+"Posto de Combustiveis Ferrari Sao Mateus LTDA","Rodovia BR-101 Norte, 921","Vila Nova","São Mateus",ES,"Diesel S-10","Menor Preço",6.890,2026-05-28
+"Posto de Combustiveis Ferrari Sao Mateus LTDA","Rodovia BR-101 Norte, 921","Vila Nova","São Mateus",ES,"Diesel S-10","Maior Preço",6.890,2026-05-28
+"Posto de Combustiveis Ferrari Sao Mateus LTDA","Rodovia BR-101 Norte, 921","Vila Nova","São Mateus",ES,Etanol,"Maior Preço",4.990,2026-04-09
+"Posto de Combustiveis Ferrari Sao Mateus LTDA","Rodovia BR-101 Norte, 921","Vila Nova","São Mateus",ES,"Gasolina Comum","Maior Preço",6.890,2026-04-09
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Gasolina Comum","Menor Preço",6.390,2026-02-16
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Gasolina Aditivada","Menor Preço",6.490,2026-02-16
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,Etanol,"Menor Preço",5.490,2026-02-16
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Diesel S-10","Menor Preço",6.490,2026-02-16
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Diesel Comum","Menor Preço",6.390,2026-02-16
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Gasolina Aditivada","Maior Preço",6.990,2026-06-03
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,Etanol,"Maior Preço",5.490,2026-02-16
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Diesel Comum","Maior Preço",6.990,2026-04-09
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Diesel S-10","Maior Preço",7.090,2026-04-09
+"Posto Damiani LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Gasolina Comum","Maior Preço",6.790,2026-04-09
+"Posto Atual Sao Mateus LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Diesel S-10","Menor Preço",5.950,2026-01-02
+"Posto Atual Sao Mateus LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,Etanol,"Menor Preço",4.450,2026-01-02
+"Posto Atual Sao Mateus LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Diesel S-10","Maior Preço",6.890,2026-05-28
+"Posto Atual Sao Mateus LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Gasolina Comum","Menor Preço",5.890,2026-01-23
+"Posto Atual Sao Mateus LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,"Gasolina Comum","Maior Preço",6.690,2026-06-16
+"Posto Atual Sao Mateus LTDA","Rua Monsenhor Guilherme Schimitz, 363",Sernamby,"São Mateus",ES,Etanol,"Maior Preço",4.690,2026-02-16
+"Macplan Auto Posto Sao Mateus LTDA","Rua Humberto Conde Rios, 39",Sernamby,"São Mateus",ES,"Gasolina Comum","Menor Preço",6.690,2026-01-02
+"Macplan Auto Posto Sao Mateus LTDA","Rua Humberto Conde Rios, 39",Sernamby,"São Mateus",ES,"Gasolina Aditivada","Menor Preço",6.690,2026-01-02
+"Macplan Auto Posto Sao Mateus LTDA","Rua Humberto Conde Rios, 39",Sernamby,"São Mateus",ES,Etanol,"Menor Preço",4.990,2026-01-02
+"Macplan Auto Posto Sao Mateus LTDA","Rua Humberto Conde Rios, 39",Sernamby,"São Mateus",ES,"Diesel S-10","Menor Preço",6.490,2026-01-02
+"Macplan Auto Posto Sao Mateus LTDA","Rua Humberto Conde Rios, 39",Sernamby,"São Mateus",ES,"Gasolina Comum","Maior Preço",6.790,2026-05-14
+"Macplan Auto Posto Sao Mateus LTDA","Rua Humberto Conde Rios, 39",Sernamby,"São Mateus",ES,Etanol,"Maior Preço",5.490,2026-05-14
+"Macplan Auto Posto Sao Mateus LTDA","Rua Humberto Conde Rios, 39",Sernamby,"São Mateus",ES,"Diesel S-10","Maior Preço",6.990,2026-05-14
+"Macplan Auto Posto Sao Mateus LTDA","Rua Humberto Conde Rios, 39",Sernamby,"São Mateus",ES,"Gasolina Aditivada","Maior Preço",6.690,2026-01-02
+"Locvan Transporte e Turismo LTDA","Rodovia Governador Mario Covas, 573","Vila Nova","São Mateus",ES,"Gasolina Comum","Menor Preço",6.390,2026-01-02
+"Locvan Transporte e Turismo LTDA","Rodovia Governador Mario Covas, 573","Vila Nova","São Mateus",ES,"Gasolina Aditivada","Menor Preço",6.390,2026-01-02
+"Locvan Transporte e Turismo LTDA","Rodovia Governador Mario Covas, 573","Vila Nova","São Mateus",ES,"Diesel S-10","Menor Preço",6.090,2026-01-02
+"Locvan Transporte e Turismo LTDA","Rodovia Governador Mario Covas, 573","Vila Nova","São Mateus",ES,Etanol,"Menor Preço",4.890,2026-01-02
+"Locvan Transporte e Turismo LTDA","Rodovia Governador Mario Covas, 573","Vila Nova","São Mateus",ES,"Gasolina Aditivada","Maior Preço",6.590,2026-01-07
+"Locvan Transporte e Turismo LTDA","Rodovia Governador Mario Covas, 573","Vila Nova","São Mateus",ES,Etanol,"Maior Preço",5.500,2026-05-08
+"Locvan Transporte e Turismo LTDA","Rodovia Governador Mario Covas, 573","Vila Nova","São Mateus",ES,"Diesel S-10","Maior Preço",7.190,2026-03-25
+"Locvan Transporte e Turismo LTDA","Rodovia Governador Mario Covas, 573","Vila Nova","São Mateus",ES,"Gasolina Comum","Maior Preço",6.790,2026-03-25
+"Auto Posto Schueng LTDA","Av. Doutor Raimundo Guilherme Sobrinho, 176","Boa Vista","São Mateus",ES,"Gasolina Comum","Menor Preço",6.390,2026-01-02
+"Auto Posto Schueng LTDA","Av. Doutor Raimundo Guilherme Sobrinho, 176","Boa Vista","São Mateus",ES,"Gasolina Aditivada","Menor Preço",6.390,2026-01-02
+"Auto Posto Schueng LTDA","Av. Doutor Raimundo Guilherme Sobrinho, 176","Boa Vista","São Mateus",ES,Etanol,"Menor Preço",4.490,2026-01-02
+"Auto Posto Schueng LTDA","Av. Doutor Raimundo Guilherme Sobrinho, 176","Boa Vista","São Mateus",ES,"Gasolina Comum","Maior Preço",6.790,2026-04-01
+"Auto Posto Schueng LTDA","Av. Doutor Raimundo Guilherme Sobrinho, 176","Boa Vista","São Mateus",ES,"Gasolina Aditivada","Maior Preço",6.990,2026-04-01
+"Auto Posto Schueng LTDA","Av. Doutor Raimundo Guilherme Sobrinho, 176","Boa Vista","São Mateus",ES,Etanol,"Maior Preço",5.690,2026-04-01
