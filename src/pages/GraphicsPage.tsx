@@ -171,14 +171,6 @@ export function GraficosPage() {
 	// ---- Gráfico II: por posto, filtrado por combustível ----
 	const [combustivelFiltro, setCombustivelFiltro] = useState<string>('');
 
-	const postosDisponiveis = useMemo(
-		() =>
-			Array.from(new Set(base.map((r) => r.posto)))
-				.filter(Boolean)
-				.sort(),
-		[base],
-	);
-
 	// Inicializa o filtro com o primeiro combustível disponível
 	const combustivelAtual = combustivelFiltro || tiposCombustivel[0] || '';
 
