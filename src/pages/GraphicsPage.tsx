@@ -13,6 +13,7 @@ import {
 	YAxis,
 } from 'recharts';
 import { useCsv } from '../hooks/useCsv';
+import { useMediaQuery } from '../hooks/useMediaQuery';
 import { parseNumber } from '../utils/format';
 
 type Row = {
@@ -69,6 +70,16 @@ function labelMes(ts: number): string {
 }
 
 export function GraficosPage() {
+	const isMobile = useMediaQuery('(max-width: 640px)');
+	const isTablet = useMediaQuery('(max-width: 1024px)');
+
+	const chartHeight = (base: number, tablet: number, mobile: number) =>
+		isMobile ? mobile : isTablet ? tablet : base;
+	const chartMargin = isMobile
+		? { top: 8, right: 8, left: 0, bottom: 0 }
+		: isTablet
+			? { top: 10, right: 15, left: 0, bottom: 0 }
+			: { top: 10, right: 30, left: 0, bottom: 0 };
 	// Carrega as 3 fontes
 	const csv1 = useCsv('/data/consu-1.csv');
 	const csv2 = useCsv('/data/consu-2.csv');
@@ -234,10 +245,10 @@ export function GraficosPage() {
 				<div className="chart-box">
 					<ResponsiveContainer
 						width="100%"
-						height={380}>
+						height={chartHeight(380, 300, 250)}>
 						<LineChart
 							data={serieGeral}
-							margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+							margin={chartMargin}>
 							<CartesianGrid
 								strokeDasharray="3 3"
 								stroke="#e2e8f0"
@@ -300,10 +311,10 @@ export function GraficosPage() {
 				<div className="chart-box">
 					<ResponsiveContainer
 						width="100%"
-						height={420}>
+						height={chartHeight(420, 360, 300)}>
 						<LineChart
 							data={seriePorPosto}
-							margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+							margin={chartMargin}>
 							<CartesianGrid
 								strokeDasharray="3 3"
 								stroke="#e2e8f0"
@@ -349,7 +360,7 @@ export function GraficosPage() {
 				<div className="chart-box">
 					<ResponsiveContainer
 						width="100%"
-						height={320}>
+						height={chartHeight(320, 260, 220)}>
 						<BarChart
 							data={
 								serieGeral.length ? [serieGeral[serieGeral.length - 1]] : []

@@ -126,6 +126,32 @@ td.money {
 	border-bottom-color: #2563eb;
 }
 
+.tabs-select {
+	display: none;
+}
+
+@media (max-width: 640px) {
+	.tabs-select {
+		display: block;
+		width: 100%;
+		padding: 10px 12px;
+		border: 1px solid #e2e8f0;
+		border-radius: 8px;
+		font-size: 0.85rem;
+		font-weight: 500;
+		background: #fff;
+		color: #1f2937;
+		cursor: pointer;
+		margin-bottom: 16px;
+		appearance: auto;
+	}
+
+	.tabs-select:focus {
+		outline: 2px solid #2563eb;
+		outline-offset: 1px;
+	}
+}
+
 .content {
 	background: #fff;
 	border-radius: 12px;
@@ -213,4 +239,108 @@ tbody tr:hover {
 	justify-content: center;
 	gap: 10px;
 	color: blueviolet;
+}
+
+/* ---- Tablet (≤1024px) ---- */
+@media (max-width: 1024px) {
+	.app {
+		padding: 20px 20px 36px;
+	}
+
+	.chart-card {
+		padding: 16px;
+	}
+
+	.chart-card h2 {
+		font-size: 1rem;
+	}
+}
+
+/* ---- Mobile (≤640px) ---- */
+@media (max-width: 640px) {
+	.app {
+		padding: 12px 12px 24px;
+	}
+
+	.header h1 {
+		font-size: 1.25rem;
+	}
+
+	.subtitle {
+		font-size: 0.85rem;
+	}
+
+	.nav {
+		flex-direction: column;
+	}
+
+	.nav-btn {
+		width: 100%;
+		text-align: center;
+	}
+
+	.tabs {
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		gap: 4px;
+	}
+
+	.tab {
+		padding: 8px 12px;
+		font-size: 0.85rem;
+		white-space: nowrap;
+	}
+
+	.meta {
+		flex-direction: column;
+		gap: 4px;
+		align-items: flex-start;
+	}
+
+	.meta h2 {
+		font-size: 1rem;
+	}
+
+	.chart-card {
+		padding: 12px;
+	}
+
+	.chart-card h2 {
+		font-size: 0.95rem;
+	}
+
+	.chart-sub {
+		font-size: 0.8rem;
+	}
+
+	.chart-header {
+		flex-direction: column;
+	}
+
+	.select {
+		width: 100%;
+		min-width: 0;
+	}
+
+	table {
+		font-size: 0.8rem;
+	}
+
+	thead th,
+	tbody td {
+		padding: 7px 8px;
+	}
+
+	.table-wrapper {
+		max-height: 60vh;
+	}
+
+	.content {
+		padding: 12px;
+	}
+
+	.footer {
+		font-size: 0.8rem;
+	}
 }
