@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #161621;
+  --color-bg-card: #161621;
+  --color-bg-input: #ffffff0f;
+  --color-bg-hover: #ffffff08;
+  --color-text-primary: #ffffffd9;
+  --color-text-secondary: #ffffff80;
+  --color-text-muted: #ffffff4d;
+  --color-border-light: #ffffff0d;
+  --color-border-medium: #ffffff26;
+  --color-chart-border: #294b9c;
+  --color-accent: #5250f3;
+  --color-red-badge: #cf2828;
+  --color-blue-badge: #7b7ab8;
+
+  --color-fuel-gasolina-comum: #0369a1;
+  --color-fuel-gasolina-aditivada: #db2777;
+  --color-fuel-etanol: #16a34a;
+  --color-fuel-diesel-s10: #d97706;
+  --color-fuel-diesel-comum: #7c3aed;
+
+  --color-fuel-dot-etanol: #47fc74;
+  --color-fuel-dot-gasolina-comum: #ed5705;
+  --color-fuel-dot-gasolina-aditivada: #5250f3;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg-primary);
+  font-family: "Inter", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+* {
+  box-sizing: border-box;
+}
