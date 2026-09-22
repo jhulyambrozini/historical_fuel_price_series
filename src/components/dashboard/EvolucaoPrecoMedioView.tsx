@@ -3,7 +3,7 @@ import {
   LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Legend,
 } from 'recharts';
 import type { FuelType } from '../../types';
-import { GAS_STATIONS, FUEL_CONFIG, DAILY_DATES } from '../../data/mockData';
+import { GAS_STATIONS, FUEL_CONFIG, MONTHLY_DATES } from '../../data/mockData';
 import { FuelToggleGroup } from './FuelToggleGroup';
 
 export function EvolucaoPrecoMedioView({
@@ -14,14 +14,14 @@ export function EvolucaoPrecoMedioView({
   onFuelToggle: (fuel: FuelType) => void;
 }) {
   const chartData = useMemo(() => {
-    return DAILY_DATES.map((date) => {
+    return MONTHLY_DATES.map((date) => {
       const point: Record<string, string | number> = { date };
       for (const fuel of selectedFuels) {
         const prices = GAS_STATIONS
-          .map((s) => s.prices[fuel]?.dailyHistory.find((h) => h.date === date)?.price)
+          .map((s) => s.prices[fuel]?.history.find((h) => h.date === date)?.price)
           .filter((p): p is number => p !== undefined);
         point[fuel] = prices.length > 0
-          ? +(prices.reduce((a, b) => a + b, 0) / prices.length).toFixed(2) : 0;
+          ? +(prices.reduce((a, b) => a + b, 0) / prices.length).toFixed(2) : null;
       }
       return point;
     });
@@ -29,7 +29,7 @@ export function EvolucaoPrecoMedioView({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center gap-6 rounded-xl p-4" style={{ backgroundColor: 'var(--color-bg-card)' }}>
+      <div className="flex flex-wrap items-center gap-6 rounded-xl p-4" style={{ backgroundColor: 'var(--color-bg-card)' }}>
         <div className="flex flex-col gap-0.5">
           <span className="text-xs tracking-wide" style={{ color: 'var(--color-text-muted)' }}>Combustíveis</span>
           <span className="text-xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>5</span>
@@ -42,7 +42,7 @@ export function EvolucaoPrecoMedioView({
         <div className="h-12 w-px" style={{ backgroundColor: 'var(--color-border-light)' }} />
         <div className="flex flex-col gap-0.5">
           <span className="text-xs tracking-wide" style={{ color: 'var(--color-text-muted)' }}>Pontos de dados</span>
-          <span className="text-xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>105</span>
+          <span className="text-xl font-semibold" style={{ color: 'var(--color-text-primary)' }}>6</span>
         </div>
       </div>
 
@@ -61,7 +61,7 @@ export function EvolucaoPrecoMedioView({
             Preço médio (R$/litro)
           </h3>
           <span className="block text-xs" style={{ color: 'var(--color-text-muted)', marginBottom: 12 }}>
-            Eixo X: data de coleta · Eixo Y: preço médio
+            Eixo X: mês · Eixo Y: preço médio
           </span>
           <ResponsiveContainer width="100%" height={350}>
             <LineChart data={chartData} margin={{ top: 8, right: 16, left: -16, bottom: 8 }}>
@@ -71,7 +71,7 @@ export function EvolucaoPrecoMedioView({
               <Tooltip contentStyle={{ backgroundColor: '#1a1a2e', border: '1px solid #294b9c', borderRadius: 8, color: '#fff', fontSize: 12 }} />
               <Legend formatter={(value: string) => <span style={{ color: 'var(--color-text-primary)', fontSize: 12 }}>{FUEL_CONFIG[value as FuelType]?.label ?? value}</span>} />
               {selectedFuels.map((fuel) => (
-                <Line key={fuel} type="monotone" dataKey={fuel} stroke={FUEL_CONFIG[fuel]?.color ?? '#666'} strokeWidth={2} dot={{ r: 3, fill: FUEL_CONFIG[fuel]?.color }} activeDot={{ r: 5 }} />
+                <Line key={fuel} type="monotone" dataKey={fuel} stroke={FUEL_CONFIG[fuel]?.color ?? '#666'} strokeWidth={2} dot={{ r: 3, fill: FUEL_CONFIG[fuel]?.color }} activeDot={{ r: 5 }} connectNulls={false} />
               ))}
             </LineChart>
           </ResponsiveContainer>

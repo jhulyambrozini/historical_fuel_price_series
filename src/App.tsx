@@ -36,7 +36,7 @@ function App() {
 
   return (
     <div
-      className="flex flex-col gap-4 p-8"
+      className="flex flex-col gap-4 p-4 sm:p-6 lg:p-8"
       style={{ minHeight: '100dvh', backgroundColor: 'var(--color-bg-primary)' }}
     >
       <Header subtitle={SUBTITLES[activeTab]} />

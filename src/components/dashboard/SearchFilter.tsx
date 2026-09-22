@@ -1,6 +1,6 @@
 export function SearchFilter() {
   return (
-    <div className="flex items-end gap-3">
+    <div className="flex flex-col items-end gap-3 sm:flex-row">
       <div className="flex flex-col gap-1.5">
         <label className="text-sm font-medium" style={{ color: 'var(--color-text-primary)' }}>
           Buscar posto ou bairro

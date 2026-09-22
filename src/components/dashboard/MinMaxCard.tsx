@@ -42,13 +42,13 @@ export function MinMaxCard({ station }: { station: GasStation }) {
           return (
             <div
               key={fuel}
-              className="flex items-center gap-3 px-5 py-3"
+              className="flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-3 sm:flex-nowrap"
               style={{
                 borderBottom: i < prices.length - 1 ? '1px solid var(--color-border-light)' : 'none',
                 backgroundColor: i % 2 === 1 ? 'var(--color-bg-hover)' : 'transparent',
               }}
             >
-              <div className="flex items-center gap-2" style={{ minWidth: 130 }}>
+              <div className="flex w-full items-center gap-2 sm:w-auto sm:min-w-[130px]">
                 <span
                   className="inline-block h-2 w-2 rounded-full"
                   style={{ backgroundColor: cfg.dotColor }}

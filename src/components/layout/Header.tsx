@@ -7,10 +7,10 @@ export function Header({ subtitle }: { subtitle?: string }) {
       >
         São Mateus — ES
       </span>
-      <h1
-        className="m-0 text-2xl font-normal"
-        style={{ color: 'var(--color-text-primary)', lineHeight: 1.4 }}
-      >
+<h1
+    className="m-0 text-xl font-normal sm:text-2xl"
+    style={{ color: 'var(--color-text-primary)', lineHeight: 1.4 }}
+  >
         Análise de Preços de Postos de Combustiveis
       </h1>
       {subtitle && (

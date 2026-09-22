@@ -44,13 +44,13 @@ export function StationCard({ station }: { station: GasStation }) {
           return (
             <div
               key={fuel}
-              className="flex items-center gap-4 px-5 py-3"
+              className="flex flex-wrap items-center gap-x-4 gap-y-2 px-5 py-3 sm:flex-nowrap"
               style={{
                 borderBottom: i < prices.length - 1 ? '1px solid var(--color-border-light)' : 'none',
                 backgroundColor: i % 2 === 1 ? 'var(--color-bg-hover)' : 'transparent',
               }}
             >
-              <div className="flex items-center gap-2" style={{ minWidth: 140 }}>
+              <div className="flex w-full items-center gap-2 sm:w-auto sm:min-w-[140px]">
                 <FuelDot fuel={fuel as keyof typeof FUEL_CONFIG} />
                 <span className="text-sm" style={{ color: 'var(--color-text-primary)' }}>
                   {cfg.label}
